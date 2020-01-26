@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.6
 
 RUN apk add --no-cache supervisor nginx bash curl perl rrdtool make perl-rrd git php5-fpm ttf-dejavu tzdata && rm -rf /var/cache/apk/*
 
