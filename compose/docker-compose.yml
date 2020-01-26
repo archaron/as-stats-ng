@@ -2,7 +2,7 @@ version: '2'
 
 services:
   as-stats:
-    image: archaron/as-stats-ng
+    image: archaron/as-stats-ng:latest
     ports:
       - "8080:80"
       - "5000:5000/udp"
@@ -12,3 +12,4 @@ services:
       - TZ=Europe/Moscow
     volumes:
       - ./as-stats:/data/as-stats
+    restart: always
